@@ -80,7 +80,7 @@ footer{
     justify-content: center;
     color: var(--black-text-color);
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 550;
     padding: 50px;
 }
 
@@ -89,7 +89,8 @@ footer{
     display: flex;
     height: 300px;
     flex-direction: column;
-    width: 180px;
+    max-width: 100%;
+    height: auto;
     text-align: center;
 }
 
@@ -100,16 +101,18 @@ footer{
  
 .info-items{
     display:flex;
+    align-items:center;
+    flex-direction: column;
     justify-content: center;
     gap: 90px;  
 }
 
 .info-item{
 
-    width: 180px;
-    height: 180px;
+    max-width: 100%;
+    height: auto;
     background: var(--h-grey);
-    margin-bottom: 5px
+    margin-bottom: 2em;
 
 }
 
@@ -123,8 +126,9 @@ footer{
 .intro-title{
     margin: 0;
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 550;
     color: var(--black-text-color);
+    line-height: 60px;
 }
 
 
@@ -138,12 +142,14 @@ footer{
     font-size: 18px;
     font-weight: normal;
     color: var(--black-text-color);
+    opacity: 70%;
     flex: 1;
+    line-height: 20px;
 }
 
-.logo{
-    font-size: 24px;
-    font-weight: 800;
+.logo-icon{
+    align-self: center;
+    padding: 1em 0;
 }
 
 ul{
@@ -165,6 +171,7 @@ button{
     align-items: center;
     width: 120px;
     font-size: 18px;
+    font-weight: 600;
     color: var(--black-text-color);
 }
 
