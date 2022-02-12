@@ -26,12 +26,13 @@ body{
     background: var(--h-grey);
 }
 
-.image-container img{
+.image-container{
     display: flex;
     width: 500px;
     height: 250px;
-    flex: 1;
     background: var(--h-grey);
+    align-self: center;
+
 }
 
 p{
@@ -44,7 +45,7 @@ header{
     justify-content: space-between;
     padding: 0 200px;
     align-items: center;
-
+    height: 15vh;
 }
 
 
@@ -65,8 +66,10 @@ footer{
     background: var(--white-grey);
     color: var(--black-text-color);
     gap: 30px;
-    padding: 100px 200px;
+    padding: 0px 200px;
     justify-content: space-between;
+    height: 85vh;
+
 }
 
 .information{
@@ -85,42 +88,62 @@ footer{
 }
 
 .item-container{
-    
     display: flex;
     height: 300px;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    text-align: center;
+ 
+    align-content: left;
+}
+
+.small-items{
+    display: flex;
+    gap: 0 5px;
+    max-height: 100%;
+    max-width: 100%;
+    flex:1;
+}
+
+.small-item{
+    flex: 1;
+    max-height: 400px;
+    width: 100%;;
+}
+
+.item-container{
+height: 400px;
+width:100%;
 }
 
 .item-container p{
     font-size: 18px;
     color: #1f2937;
+    text-align: left;
+    margin: 0 200px;
 }
  
 .info-items{
     display:flex;
-    align-items:center;
+    align-items:left;
     flex-direction: column;
-    justify-content: center;
-    gap: 90px;  
+    gap: 50px;
+    height:100%;
 }
 
 .info-item{
-
-    max-width: 100%;
-    height: auto;
     background: var(--h-grey);
-    margin-bottom: 2em;
-
+    align-self: left;
+    height: 100%;
+    width: auto;
 }
 
 .intro-content{
     display: flex;
     flex-direction: column;
-    justify-content: space-e;
     color: var(--black-text-color);
+    gap: 20px;
+    align-self: center;
 }
 
 .intro-title{
@@ -144,7 +167,7 @@ footer{
     color: var(--black-text-color);
     opacity: 70%;
     flex: 1;
-    line-height: 20px;
+    flex-grow: 0;
 }
 
 .logo-icon{
