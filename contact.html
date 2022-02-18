@@ -23,19 +23,25 @@
     <div class="content">
 
         <form action="script.js">
-            <div class="form-container">
+            <div>
 
-                <fieldset>
+                <fieldset class="form-container">
                     <legend>Contact information</legend>
                     <label for="name-f">Name</label>
                     <input type="textarea" name="name" id="name-f" autocomplete="name">
 
                     <label for="email-f">Email</label>
-                    <input type="email" name="email" id="email-f">
+                    <input required type="email" name="email" id="email-f">
 
                     <label for="text-f">State your inquiry</label>
-                    <input type="textarea" name="text" id="text-f">
+                    <input required type="textarea" name="text" id="text-f">
+                    
 
+                    <label for="password">Priority</label>
+                    <input required minlength="3" type="password" id="password" name="password" aria-describedby="password-minlength">
+                    <div id="password-minlength">please a minimum of 3 letters</div>
+
+                    <input type="submit" value="Submit">
 
                 </fieldset>
 

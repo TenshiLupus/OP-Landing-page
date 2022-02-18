@@ -32,6 +32,14 @@ a:link, a:visited{
     color: var(--link-color); 
 }
 
+input:required{
+    border: 2px solid;
+}
+
+input:user-invalid{
+    border: 2px solid red;
+}
+
 .image-container{
     display: flex;
     width: 500px;
@@ -213,7 +221,8 @@ button{
     
     display:flex;
     flex-direction: column;
-    
+    min-height: 100vh;
+    justify-content: space-around;
 }
 
 .quote{
