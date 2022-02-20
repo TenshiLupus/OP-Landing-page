@@ -31,6 +31,9 @@ a:link, a:visited{
     text-decoration: none;   
     color: var(--link-color); 
 }
+label{
+    font-size: 1rem;
+}
 
 input:required{
     border: 2px solid;
@@ -310,5 +313,17 @@ button{
     
 }
 
+@media (pointer: fine) {
+    
+    input[type="checkbox"]{
+        width: 15px;
+        height: 15px;
+    }
+}
 
-
+@media (pointer: coarse){
+    input[type="checkbox"]{
+        width: 30px;
+        height: 30px;
+    }
+}

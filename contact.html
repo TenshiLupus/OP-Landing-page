@@ -30,16 +30,16 @@
                     <label for="name-f">Name</label>
                     <input type="textarea" name="name" id="name-f" autocomplete="name">
 
-                    <label for="email-f">Email</label>
-                    <input required type="email" name="email" id="email-f">
+                    <label for="email-f">Email * (required)</label>
+                    <input required type="email" name="email" id="email-f" aria-required="true">
 
-                    <label for="text-f">State your inquiry</label>
-                    <input required type="textarea" name="text" id="text-f">
+                    <label for="text-f">State your inquiry * (required)</label>
+                    <input required type="textarea" name="text" id="text-f" aria-required="true">
                     
 
-                    <label for="password">Priority</label>
-                    <input required minlength="3" type="password" id="password" name="password" aria-describedby="password-minlength">
-                    <div id="password-minlength">please a minimum of 3 letters</div>
+                    <label for="password">Priority * (required)</label>
+                    <input required minlength="3" type="password" id="password" name="password" aria-describedby="password-minlength" aria-required="true">
+                    <span id="password-minlength" aria-live="assertive" class="validation-message">Enter at least eight characters</span>
 
                     <input type="submit" value="Submit">
 
