@@ -15,38 +15,45 @@
         <a href="index.html"><img src="images/Logo.svg" class="logo-icon"></a>
 
         <ul>
-            <li><a href="contact.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="index.html">Projects</a></li>
             <li><a href="https://www.artstation.com/tenshilupus">Artstation</a></li>
+            <li><a href="stats.html">Stats</a></li>
         </ul>
     </header>
     <div class="content">
 
-        <form action="script.js">
-            <div>
-
-                <fieldset class="form-container">
-                    <legend>Contact information</legend>
-                    <label for="name-f">Name</label>
-                    <input type="textarea" name="name" id="name-f" autocomplete="name">
-
-                    <label for="email-f">Email * (required)</label>
-                    <input required type="email" name="email" id="email-f" aria-required="true">
-
-                    <label for="text-f">State your inquiry * (required)</label>
-                    <input required type="textarea" name="text" id="text-f" aria-required="true">
-
-
-                    <label for="password">Priority * (required)</label>
-                    <input required minlength="3" type="password" id="password" name="password" aria-describedby="password-minlength" aria-required="true">
-                    <span id="password-minlength" aria-live="assertive" class="validation-message">Enter at least eight characters</span>
-
-                    <input type="submit" value="Submit">
-
-                </fieldset>
-
+        <div class="form-body">
+            <div class="image-block">
+                <img id ="form-side-image" src="/images/angel-cardenas-martinez-highresscreenshot00004.jpg">
+                <div class="image-logo"></div>
             </div>
+        
+        <form class="right-block" action="script.js">
+            
+            <fieldset class="form-container">
+                <legend>Contact information</legend>
+                <label for="name-f">Name</label>
+                <input type="textarea" name="name" id="name-f" autocomplete="name">
+
+                <label for="email-f">Email * (required)</label>
+                <input required type="email" name="email" id="email-f" aria-required="true">
+
+                <label for="text-f">State your inquiry * (required)</label>
+                <input required type="textarea" name="text" id="text-f" aria-required="true">
+
+
+                <label for="password">Priority * (required)</label>
+                <input required minlength="3" type="password" id="password" name="password"
+                    aria-describedby="password-minlength" aria-required="true">
+                <span id="password-minlength" aria-live="assertive" class="validation-message">Enter at least eight
+                    characters</span>
+
+                <input type="submit" value="Submit">
+
+            </fieldset>
         </form>
+        </div>
 
     </div>
 
