@@ -11,7 +11,10 @@
     --button-color: #3882f6;
     --header-height: 15vh;
     --footer-height: 40px;
-    --body-height: calc(100vh - calc(var(--header-height) + var(--footer-height)))
+    --body-height: calc(100vh - calc(var(--header-height) + var(--footer-height)));
+
+    padding: 0;
+    margin: 0;
 }
 
 html,
@@ -34,19 +37,58 @@ a:visited {
     color: var(--link-color);
 }
 
-/* image logo block */
+/* Remove styling around legend */
+
+fieldset{
+    border: none;
+}
+
+legend{
+    position: relative; 
+    top:1.5rem;
+    padding: 0;
+    border: none;
+    width: 100%;
+    
+}
+
+/* Image logo block */
 img[id="form-side-image"]{
     width: 40vw;
     object-fit: cover;
     height:100%;
 }
 
+.left-form-column{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.right-form-column{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* */
 .image-logo{
     background-image:url(/images/Logo.svg);
+    
 }
 
 label {
     font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+
+form>input{ 
+    display: flex;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding: 0.5rem;
 }
 
 input:required {
@@ -55,6 +97,15 @@ input:required {
 
 input:user-invalid {
     border: 2px solid red;
+}
+
+fieldset input{
+    align-self: flex-start;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    
 }
 
 .image-container {
@@ -337,18 +388,24 @@ button {
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     
-    gap: 5px 0;
+    display: flex;
+    
+    gap: 2em 4em;
+
+    padding: 2rem 3rem;
+    margin: 0;
+
+    background-color:rgb(190, 190, 190);
+
 }
 
 .right-block {
     display: flex;  
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    flex: 1;
+    flex:1;
+
 }
 
 .bolded-text {
@@ -362,7 +419,9 @@ button {
     font-size: 18px;
 }
 
-.right-signup {}
+.right-signup {
+
+}
 
 .signup-button {
     width: 120px;
