@@ -25,44 +25,45 @@
 
         <div class="form-body">
             <div class="image-block">
-                <img id ="form-side-image" src="/images/angel-cardenas-martinez-highresscreenshot00004.jpg">
-                <div class="image-logo">
-                    
+                <img id="form-side-image" src="/images/angel-cardenas-martinez-highresscreenshot00004.jpg">
+                <div class="transparent-block">
+                    <img src="/images/Logo.svg">
                 </div>
             </div>
-        
-        <form class="right-block" action="script.js">
-           
-            
-            <fieldset class="form-container">
-                <legend>Contact information</legend>
-                
-                <div class="left-form-column">
-                
-                    <label for="name-f">Name</label>
-                <input type="textarea" name="name" id="name-f" autocomplete="name">
 
-                <label for="email-f">Email * (required)</label>
-                <input required type="email" name="email" id="email-f" aria-required="true">
-                
-                </div>
-                
-                <div class="right-form-column">
-                <label for="text-f">State your inquiry * (required)</label>
-                <input required type="textarea" name="text" id="text-f" aria-required="true">
+            <form class="right-block" action="script.js">
 
 
-                <label for="password">Priority * (required)</label>
-                <input required minlength="3" type="password" id="password" name="password"
-                    aria-describedby="password-minlength" aria-required="true">
-                <span id="password-minlength" aria-live="assertive" class="validation-message">Enter at least eight
-                    characters</span>
-                </div>
+                <fieldset class="form-container">
+                    <legend>Contact information</legend>
 
-                
-            </fieldset>
-            <input type="submit" value="Submit">
-        </form>
+                    <div class="left-form-column">
+
+                        <label for="name-f">Name</label>
+                        <input type="textarea" name="name" id="name-f" autocomplete="name">
+
+                        <label for="email-f">Email * (required)</label>
+                        <input required type="email" name="email" id="email-f" aria-required="true">
+
+                    </div>
+
+                    <div class="right-form-column">
+                        <label for="text-f">State your inquiry * (required)</label>
+                        <input required minlength="3" type="textarea" name="text" id="text-f" aria-required="true">
+
+
+                        <label for="password">Priority * (required)</label>
+                        <input required minlength="3" type="password" id="password" name="password"
+                            aria-describedby="password-minlength" aria-required="true">
+                        <span id="password-minlength" aria-live="assertive" class="validation-message">Enter at least
+                            eight
+                            characters</span>
+                    </div>
+
+
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
     </div>
