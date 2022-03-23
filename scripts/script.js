@@ -1,3 +1,13 @@
+function User(name, id){
+    this.name = name;
+    this.id = id;
+    this.sayName = function(){
+        console.log(name);
+        console.log(id);
+    }
+}
+
+
 document.addEventListener('blur', function(event){
     const isValid = event.target.validity.valid;
     const message = event.target.validationMessage;
